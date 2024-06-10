@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title style="text-align: center;">文章管理系统</title>
+</head>
+
+<body>
+    <h1 style="color: purple; font-size: 24px; text-align: center;">文章管理系统</h1>
+    <form action="home.html" method="post">
+        <div class="form-group">
+            <label for="category">文章分类：</label>
+            <select id="category" name="category">
+                <option value="" selected></option>
+                <!-- 可添加更多分类选项 -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="content">正文内容：</label>
+            <textarea id="content" name="content" style="width: 100%; height: 200px;"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">上传</button>
+        </div>
+    </form>
+    <hr>
+    <form action="home.html" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file">附件上传：</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <div class="form-group">
+            <button type="submit">上传</button>
+        </div>
+    </form>
+    <p style="color: gray; font-size: 16px;">只能上传pdf/word文件，且不超过500kb</p>
+    <button onclick="window.location.href='home.html';" style="color: blue; font-size: 16px;">回到首页</button>
+</body>
+
+</html>

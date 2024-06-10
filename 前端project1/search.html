@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文章管理系统</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            width: 33.33%;
+        }
+
+        header {
+            flex-shrink: 0;
+        }
+
+        .search-form,
+        .pagination {
+            display: flex;
+            justify-content: center;
+            width: 66.66%;
+            margin-top: 10px;
+        }
+
+        .search-form form,
+        .pagination {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-form select,
+        .search-form input,
+        .search-form button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 90%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .pagination a {
+            display: inline-block;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .pagination a:hover {
+            background-color: #ddd;
+        }
+
+        #back-to-home {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>文章管理系统</h1>
+    </header>
+
+    <div class="search-form">
+        <form action="#">
+            <select name="search_by" id="search_by">
+                <option value="title">标题</option>
+                <option value="author">作者</option>
+                <option value="keyword">关键字</option>
+                <option value="category">类别</option>
+            </select>
+            <input type="text" id="search_text" placeholder="输入搜索内容">
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>日期</th>
+                <th>标题</th>
+                <th>类别</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2023-01-01</td>
+                <td>文章1</td>
+                <td>类别1</td>
+                <td><a href="display.html">查看</a> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+                <td>2023-01-01</td>
+                <td>文章2</td>
+                <td>类别2</td>
+                <td><a href="display.html">查看</a> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+                <td>2023-01-01</td>
+                <td>文章3</td>
+                <td>类别3</td>
+                <td><a href="display.html">查看</a> <a href="#">编辑</a></td>
+            </tr>
+            <tr>
+                <td>2023-01-01</td>
+                <td>文章4</td>
+                <td>类别4</td>
+                <td><a href="display.html">查看</a> <a href="#">编辑</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">...</a>
+        <a href="#">100</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+    <a id="back-to-home" href="home.html">回到首页</a>
+
+</body>
+
+</html>

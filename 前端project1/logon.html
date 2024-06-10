@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章管理系统 - 登录</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('logon-back.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .login-box {
+            position: relative;
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-box h1 {
+            color: #8a2be2;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-box input {
+            width: calc(100% - 20px);
+            /* Adjusted to account for padding */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        .login-box button {
+            width: calc(100% - 20px);
+            /* Adjusted to account for padding */
+            padding: 10px;
+            margin: 10px 0;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background: #0056b3;
+        }
+
+        .login-box a {
+            position: absolute;
+            bottom: -20px;
+            /* Adjusted to position below the button */
+            right: 10px;
+            color: #8a2be2;
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>文章管理系统</h1>
+        <form action="home.html">
+            <input type="text" placeholder="请输入用户名" required>
+            <input type="password" placeholder="请输入密码" required>
+            <button type="submit">登录</button>
+        </form>
+        <a href="register.html">注册</a>
+    </div>
+</body>
+
+</html>

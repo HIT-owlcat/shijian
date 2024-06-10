@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章管理系统</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .header h1 {
+            color: #8a2be2;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav a {
+            margin-left: 20px;
+            color: #8a2be2;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav a i {
+            margin-right: 5px;
+        }
+
+        .nav .fa-key {
+            color: #8a2be2;
+        }
+
+        .content {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .content .user-info {
+            flex: 1;
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .content .user-info img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .content .user-info p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .content .article-list {
+            flex: 3;
+            margin-left: 20px;
+        }
+
+        .article-list table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .article-list table,
+        .article-list th,
+        .article-list td {
+            border: 1px solid #ddd;
+        }
+
+        .article-list th,
+        .article-list td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .article-list th {
+            background-color: #f2f2f2;
+        }
+
+        .article-list tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            display: inline-block;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .pagination a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="upload.html">上传文章</a>
+            <a href="search.html">搜索</a>
+            <a href="changepassword.html"><i class="fas fa-key"></i> 修改密码</a>
+            <a href="logon.html" class="logout">退出登录</a>
+        </div>
+
+        <div class="header">
+            <h1>文章管理系统</h1>
+        </div>
+
+        <div class="content">
+            <div class="user-info">
+                <img src="logo.png" alt="用户头像">
+                <p>欢迎，用户名</p>
+            </div>
+
+            <div class="article-list">
+                <h2>我的文章</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>标题</th>
+                            <th>类别</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023-01-01</td>
+                            <td>文章1</td>
+                            <td>类别1</td>
+                            <td><a href="display.html">查看</a> <a href="#">编辑</a></td>
+                        </tr>
+                        <tr>
+                            <td>2023-01-01</td>
+                            <td>文章2</td>
+                            <td>类别2</td>
+                            <td><a href="display.html">查看</a> <a href="#">编辑</a></td>
+                        </tr>
+                        <tr>
+                            <td>2023-01-01</td>
+                            <td>文章3</td>
+                            <td>类别3</td>
+                            <td><a href="display.html">查看</a> <a href="#">编辑</a></td>
+                        </tr>
+                        <tr>
+                            <td>2023-01-01</td>
+                            <td>文章4</td>
+                            <td>类别4</td>
+                            <td><a href="display.html">查看</a> <a href="#">编辑</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">...</a>
+                    <a href="#">100</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

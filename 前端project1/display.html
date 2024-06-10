@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文章查看 - 文章管理系统</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .article-container {
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .article-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .article-header h1 {
+            margin: 0;
+            color: purple;
+        }
+
+        .article-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .article-meta span {
+            display: block;
+        }
+
+        .article-summary,
+        .article-body,
+        .article-references {
+            margin-bottom: 20px;
+        }
+
+        .comments-section {
+            width: 66.66%;
+            margin: 40px auto 0;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .comments-section h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .comment h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+        }
+
+        .comment p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .comment-form {
+            margin-top: 20px;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .comment-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comment-form button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .comment-form button[type="reset"] {
+            background-color: #ccc;
+            color: black;
+        }
+
+        #back-to-home {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .comment-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="article-container">
+        <div class="article-header">
+            <h1>文章标题</h1>
+        </div>
+        <div class="article-meta">
+            <span>作者: 张三</span>
+            <span>日期: 2024-06-06</span>
+            <span>关键字: 示例, 文章, 测试</span>
+            <span>类别: 技术</span>
+        </div>
+        <div class="article-summary">
+            <h2>摘要</h2>
+            <p>这是一篇示例文章的摘要部分，内容简要介绍了文章的主题和主要内容。</p>
+        </div>
+        <div class="article-body">
+            <h2>正文</h2>
+            <p>这是文章的正文部分，详细描述了文章的主要内容和观点。</p>
+        </div>
+        <div class="article-references">
+            <h2>引用</h2>
+            <p>这是文章的引用部分，列出了文章中引用的所有资源和参考文献。</p>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <h2>评论</h2>
+        <div class="comment">
+            <h3>用户1 <img class="comment-icon" src="https://img.icons8.com/ios-glyphs/30/000000/comments.png" alt="评论图标">
+            </h3>
+            <p>这是用户1的评论内容。</p>
+        </div>
+        <div class="comment">
+            <h3>用户2 <img class="comment-icon" src="https://img.icons8.com/ios-glyphs/30/000000/comments.png" alt="评论图标">
+            </h3>
+            <p>这是用户2的评论内容。</p>
+        </div>
+        <div class="comment-form">
+            <textarea placeholder="发表评论"></textarea>
+            <button type="submit">提交评论</button>
+        </div>
+    </div>
+
+    <a id="back-to-home" href="home.html">回到首页</a>
+</body>
+
+</html>
